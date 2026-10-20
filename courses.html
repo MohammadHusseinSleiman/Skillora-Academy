@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore Skillora Academy courses in web development, programming, UI/UX design, and database fundamentals.">
+
+    <title>Explore Courses | Skillora Academy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </span>
+                Skillora<span class="brand-dot">.</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="course-details.html?course=web-development">Course Details</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="contact.html" class="btn btn-primary-custom">
+                    Get Started <i class="bi bi-arrow-up-right ms-1"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Hero -->
+    <header class="courses-hero">
+        <div class="container">
+
+            <div class="courses-hero-content">
+
+                <div class="hero-badge">
+                    <i class="bi bi-book-half me-2"></i>
+                    Discover Your Potential
+                </div>
+
+                <h1>
+                    Find the Right Course<br>
+                    <span>For Your Future.</span>
+                </h1>
+
+                <p>
+                    Explore practical learning opportunities, develop new skills,
+                    and discover a learning path that matches your goals.
+                </p>
+
+                <div class="courses-hero-actions">
+                    <a href="#courseCatalog" class="btn btn-primary-custom btn-lg">
+                        Explore All Courses
+                        <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+                </div>
+
+                <div class="courses-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Courses</span>
+                </div>
+
+            </div>
+
+            <div class="courses-hero-decoration courses-decoration-one"></div>
+            <div class="courses-hero-decoration courses-decoration-two"></div>
+
+        </div>
+    </header>
+
+
+    <!-- Course Catalog -->
+    <main class="courses-catalog section-padding" id="courseCatalog">
+
+        <div class="container">
+
+            <div class="section-heading courses-section-heading">
+
+                <div>
+                    <span class="section-eyebrow">OUR LEARNING PROGRAMS</span>
+                    <h2>Explore Our Courses</h2>
+                    <p>
+                        From your first steps in programming to creative design
+                        and database skills, find a course to get started.
+                    </p>
+                </div>
+
+                <div class="courses-count">
+                    <i class="bi bi-collection me-2"></i>
+                    <span id="courseCount">6 Courses</span>
+                </div>
+
+            </div>
+
+
+            <!-- Course Filters -->
+            <div class="course-filters" role="group" aria-label="Filter courses by category">
+
+                <button
+                    type="button"
+                    class="course-filter active"
+                    data-filter="all"
+                    aria-pressed="true">
+                    All Courses
+                </button>
+
+                <button
+                    type="button"
+                    class="course-filter"
+                    data-filter="development"
+                    aria-pressed="false">
+                    Web Development
+                </button>
+
+                <button
+                    type="button"
+                    class="course-filter"
+                    data-filter="programming"
+                    aria-pressed="false">
+                    Programming
+                </button>
+
+                <button
+                    type="button"
+                    class="course-filter"
+                    data-filter="design"
+                    aria-pressed="false">
+                    UI/UX Design
+                </button>
+
+                <button
+                    type="button"
+                    class="course-filter"
+                    data-filter="database"
+                    aria-pressed="false">
+                    Databases
+                </button>
+
+            </div>
+
+
+            <!-- Courses Grid -->
+            <div class="row g-4" id="coursesGrid">
+
+
+                <!-- Course 1: Web Development -->
+                <div class="col-md-6 col-lg-4 course-item" data-category="development">
+
+                    <article class="course-card h-100">
+
+                        <div class="course-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                                alt="Web development workspace"
+                                class="course-image"
+                                loading="lazy">
+
+                            <span class="course-category">Development</span>
+
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-meta">
+                                <span><i class="bi bi-clock me-1"></i> 12 Weeks</span>
+                                <span><i class="bi bi-bar-chart me-1"></i> Beginner</span>
+                            </div>
+
+                            <h3>Web Development</h3>
+
+                            <p>
+                                Learn HTML, CSS, JavaScript, and Bootstrap
+                                to create responsive and interactive websites.
+                            </p>
+
+                            <div class="course-card-footer">
+                                <span class="course-price">Begin Your Journey</span>
+
+                                <a
+                                    href="course-details.html?course=web-development"
+                                    class="course-arrow"
+                                    aria-label="View Web Development details">
+
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Course 2: Front-End Development -->
+                <div class="col-md-6 col-lg-4 course-item" data-category="development">
+
+                    <article class="course-card h-100">
+
+                        <div class="course-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80"
+                                alt="Web interface displayed on a computer"
+                                class="course-image"
+                                loading="lazy">
+
+                            <span class="course-category">Development</span>
+
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-meta">
+                                <span><i class="bi bi-clock me-1"></i> 8 Weeks</span>
+                                <span><i class="bi bi-bar-chart me-1"></i> Beginner</span>
+                            </div>
+
+                            <h3>Front-End Development</h3>
+
+                            <p>
+                                Build modern user interfaces and learn
+                                the fundamentals of responsive web design.
+                            </p>
+
+                            <div class="course-card-footer">
+                                <span class="course-price">Build Your Skills</span>
+
+                                <a
+                                    href="course-details.html?course=frontend"
+                                    class="course-arrow"
+                                    aria-label="View Front-End Development details">
+
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Course 3: Back-End Development -->
+                <div class="col-md-6 col-lg-4 course-item" data-category="development">
+
+                    <article class="course-card h-100">
+
+                        <div class="course-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                                alt="Server infrastructure representing backend development"
+                                class="course-image"
+                                loading="lazy">
+
+                            <span class="course-category">Development</span>
+
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-meta">
+                                <span><i class="bi bi-clock me-1"></i> 10 Weeks</span>
+                                <span><i class="bi bi-bar-chart me-1"></i> Intermediate</span>
+                            </div>
+
+                            <h3>Back-End Development with PHP</h3>
+
+                            <p>
+                                Learn server-side programming, API fundamentals,
+                                and how to connect applications to databases.
+                            </p>
+
+                            <div class="course-card-footer">
+                                <span class="course-price">Explore Back-End</span>
+
+                                <a
+                                    href="course-details.html?course=backend-php"
+                                    class="course-arrow"
+                                    aria-label="View Back-End Development details">
+
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Course 4: UI/UX Design -->
+                <div class="col-md-6 col-lg-4 course-item" data-category="design">
+
+                    <article class="course-card h-100">
+
+                        <div class="course-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
+                                alt="Creative UI and UX design workspace"
+                                class="course-image"
+                                loading="lazy">
+
+                            <span class="course-category">Design</span>
+
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-meta">
+                                <span><i class="bi bi-clock me-1"></i> 6 Weeks</span>
+                                <span><i class="bi bi-bar-chart me-1"></i> Beginner</span>
+                            </div>
+
+                            <h3>UI/UX Design</h3>
+
+                            <p>
+                                Understand user research, wireframes, visual
+                                hierarchy, and user-friendly interface design.
+                            </p>
+
+                            <div class="course-card-footer">
+                                <span class="course-price">Explore Design</span>
+
+                                <a
+                                    href="course-details.html?course=ui-ux-design"
+                                    class="course-arrow"
+                                    aria-label="View UI/UX Design details">
+
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Course 5: Python -->
+                <div class="col-md-6 col-lg-4 course-item" data-category="programming">
+
+                    <article class="course-card h-100">
+
+                        <div class="course-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                                alt="Programming code on a computer screen"
+                                class="course-image"
+                                loading="lazy">
+
+                            <span class="course-category">Programming</span>
+
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-meta">
+                                <span><i class="bi bi-clock me-1"></i> 8 Weeks</span>
+                                <span><i class="bi bi-bar-chart me-1"></i> Beginner</span>
+                            </div>
+
+                            <h3>Python Programming</h3>
+
+                            <p>
+                                Develop problem-solving skills and learn
+                                programming fundamentals using Python.
+                            </p>
+
+                            <div class="course-card-footer">
+                                <span class="course-price">Start Coding</span>
+
+                                <a
+                                    href="course-details.html?course=python"
+                                    class="course-arrow"
+                                    aria-label="View Python Programming details">
+
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Course 6: Database Fundamentals -->
+                <div class="col-md-6 col-lg-4 course-item" data-category="database">
+
+                    <article class="course-card h-100">
+
+                        <div class="course-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80"
+                                alt="Database and data management concept"
+                                class="course-image"
+                                loading="lazy">
+
+                            <span class="course-category">Databases</span>
+
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-meta">
+                                <span><i class="bi bi-clock me-1"></i> 4 Weeks</span>
+                                <span><i class="bi bi-bar-chart me-1"></i> Beginner</span>
+                            </div>
+
+                            <h3>Database Fundamentals</h3>
+
+                            <p>
+                                Learn relational database concepts, SQL queries,
+                                and the basics of organizing structured data.
+                            </p>
+
+                            <div class="course-card-footer">
+                                <span class="course-price">Explore Databases</span>
+
+                                <a
+                                    href="course-details.html?course=database"
+                                    class="course-arrow"
+                                    aria-label="View Database Fundamentals details">
+
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- Empty State -->
+            <div class="courses-empty-state d-none" id="emptyState">
+
+                <div class="empty-state-icon">
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <h3>No courses found</h3>
+
+                <p>Try selecting another category.</p>
+
+                <button type="button" class="btn btn-primary-custom" id="resetFilters">
+                    View All Courses
+                </button>
+
+            </div>
+
+
+            <!-- Bottom CTA -->
+            <div class="courses-bottom-cta">
+
+                <div class="courses-bottom-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+
+                <div class="courses-bottom-content">
+                    <h3>Not sure which course to choose?</h3>
+
+                    <p>
+                        Get in touch with our academy to explore your options.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="btn btn-outline-custom">
+                    Contact Us
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-5 col-md-6">
+
+                    <a class="navbar-brand footer-brand" href="index.html">
+                        <span class="brand-icon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </span>
+                        Skillora<span class="brand-dot">.</span>
+                    </a>
+
+                    <p class="footer-description">
+                        Learn new skills, explore new possibilities,
+                        and take the next step toward your goals.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+
+                    <h3 class="footer-heading">Explore</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="course-details.html?course=web-development">Course Details</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+
+                    <h3 class="footer-heading">Academy</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Register</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h3 class="footer-heading">Stay Connected</h3>
+
+                    <p class="footer-description">
+                        Have a question about a course? Get in touch with us.
+                    </p>
+
+                    <a href="contact.html" class="footer-contact-link">
+                        Contact the Academy
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear">2026</span> Skillora Academy.
+                    All rights reserved.
+                </p>
+
+                <a href="contact.html">Start Your Learning Journey</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1069,3 +1069,673 @@ a {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+
+/* ==============================
+    12. Courses Page Hero
+================================= */
+
+.courses-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 75px 0 55px;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(108, 76, 241, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(180deg, #ffffff 0%, #f8f7fc 100%);
+}
+
+.courses-hero .container {
+    position: relative;
+}
+
+.courses-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.courses-hero .hero-badge {
+    margin-bottom: 22px;
+}
+
+.courses-hero h1 {
+    margin-bottom: 20px;
+    color: var(--dark);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.courses-hero h1 span {
+    color: var(--primary);
+}
+
+.courses-hero-content > p {
+    max-width: 610px;
+    margin: 0 auto 27px;
+    color: var(--muted);
+    font-size: 0.98rem;
+    line-height: 1.9;
+}
+
+.courses-hero-actions {
+    margin-bottom: 30px;
+}
+
+.courses-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.courses-breadcrumb a {
+    color: var(--muted);
+    transition: color var(--transition);
+}
+
+.courses-breadcrumb a:hover {
+    color: var(--primary);
+}
+
+.courses-breadcrumb i {
+    font-size: 0.68rem;
+}
+
+.courses-breadcrumb span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.courses-hero-decoration {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.courses-decoration-one {
+    top: 10px;
+    right: 5%;
+    width: 75px;
+    height: 75px;
+    border: 15px solid rgba(108, 76, 241, 0.1);
+}
+
+.courses-decoration-two {
+    bottom: 15px;
+    left: 4%;
+    width: 48px;
+    height: 48px;
+    background: rgba(108, 76, 241, 0.09);
+}
+
+
+/* ==============================
+    13. Courses Catalog
+================================= */
+
+.courses-catalog {
+    background: var(--background);
+}
+
+.courses-section-heading {
+    align-items: flex-end;
+}
+
+.courses-count {
+    flex-shrink: 0;
+    padding: 10px 15px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 10px;
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.course-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.course-filter {
+    padding: 10px 17px;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.83rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        color var(--transition),
+        background-color var(--transition),
+        border-color var(--transition);
+}
+
+.course-filter:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.course-filter.active {
+    color: #ffffff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.course-item {
+    transition: opacity var(--transition);
+}
+
+.course-item[hidden] {
+    display: none !important;
+}
+
+
+/* ==============================
+    14. Empty State
+================================= */
+
+.courses-empty-state {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.empty-state-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 18px;
+    font-size: 1.5rem;
+}
+
+.courses-empty-state h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.courses-empty-state p {
+    margin-bottom: 22px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+
+/* ==============================
+    15. Courses Bottom CTA
+================================= */
+
+.courses-bottom-cta {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 55px;
+    padding: 27px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.courses-bottom-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 14px;
+    font-size: 1.35rem;
+}
+
+.courses-bottom-content {
+    flex-grow: 1;
+}
+
+.courses-bottom-content h3 {
+    margin-bottom: 5px;
+    color: var(--dark);
+    font-size: 0.98rem;
+    font-weight: 750;
+}
+
+.courses-bottom-content p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.83rem;
+}
+
+.courses-bottom-cta > .btn {
+    flex-shrink: 0;
+}
+
+
+/* ==============================
+    16. Courses Page Responsive
+================================= */
+
+@media (max-width: 767.98px) {
+    .courses-hero {
+        padding: 55px 0 45px;
+    }
+
+    .courses-hero h1 {
+        letter-spacing: -1.3px;
+    }
+
+    .courses-decoration-one {
+        right: -25px;
+    }
+
+    .courses-decoration-two {
+        left: -15px;
+    }
+
+    .courses-count {
+        align-self: flex-start;
+    }
+
+    .course-filters {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    .course-filter {
+        padding: 9px 12px;
+        font-size: 0.77rem;
+    }
+
+    .courses-bottom-cta {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 22px;
+    }
+
+    .courses-bottom-content {
+        flex-basis: calc(100% - 75px);
+    }
+
+    .courses-bottom-cta > .btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .courses-hero h1 {
+        font-size: 2.15rem;
+    }
+
+    .course-filters {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .course-filter {
+        padding: 10px 6px;
+        text-align: center;
+    }
+}
+
+
+
+/* ==============================
+    17. Course Details Page
+================================= */
+
+.details-breadcrumb-section {
+    padding: 22px 0;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+}
+
+.course-breadcrumb {
+    margin: 0;
+    font-size: 0.82rem;
+}
+
+.course-breadcrumb a {
+    color: var(--muted);
+    transition: color var(--transition);
+}
+
+.course-breadcrumb a:hover {
+    color: var(--primary);
+}
+
+.course-breadcrumb .breadcrumb-item.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.course-details-section {
+    padding: 55px 0 90px;
+    background: #ffffff;
+}
+
+.course-details-header {
+    margin-bottom: 28px;
+}
+
+.details-category {
+    display: inline-flex;
+    padding: 7px 12px;
+    margin-bottom: 17px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 8px;
+    font-size: 0.77rem;
+    font-weight: 700;
+}
+
+.course-details-header h1 {
+    margin-bottom: 16px;
+    color: var(--dark);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
+}
+
+.course-details-header > p {
+    max-width: 760px;
+    margin-bottom: 22px;
+    color: var(--muted);
+    font-size: 0.96rem;
+    line-height: 1.9;
+}
+
+.details-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.details-meta > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.details-meta i {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.details-image-wrapper {
+    overflow: hidden;
+    margin-bottom: 35px;
+    background: var(--background);
+    border-radius: var(--radius-lg);
+}
+
+.details-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.details-content-section {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.details-content-section h2 {
+    margin-bottom: 18px;
+    color: var(--dark);
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.details-content-section > p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.91rem;
+    line-height: 1.95;
+}
+
+.details-section-description {
+    margin-bottom: 18px !important;
+}
+
+.learning-list,
+.requirements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.learning-list li,
+.requirements-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+.learning-list i {
+    margin-top: 4px;
+    color: var(--success);
+    font-size: 1rem;
+}
+
+.requirements-list i {
+    margin-top: 4px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.course-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 18px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.course-note > i {
+    margin-top: 3px;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.course-note p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.81rem;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+    18. Registration Sidebar
+================================= */
+
+.course-registration-card {
+    position: sticky;
+    top: 105px;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.registration-card-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.registration-eyebrow {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.course-registration-card h2 {
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-size: 1.45rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.course-registration-card > p {
+    margin-bottom: 22px;
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.9;
+}
+
+.registration-divider {
+    height: 1px;
+    margin-bottom: 23px;
+    background: var(--border);
+}
+
+.registration-info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 20px;
+}
+
+.registration-info > i {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 11px;
+    font-size: 1.05rem;
+}
+
+.registration-info span,
+.registration-info strong {
+    display: block;
+}
+
+.registration-info span {
+    margin-bottom: 3px;
+    color: var(--muted);
+    font-size: 0.74rem;
+}
+
+.registration-info strong {
+    color: var(--dark);
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+.registration-button {
+    margin-top: 8px;
+    padding: 14px 15px;
+}
+
+.back-to-courses {
+    display: block;
+    margin-top: 19px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color var(--transition);
+}
+
+.back-to-courses:hover {
+    color: var(--primary);
+}
+
+
+/* ==============================
+    19. Course Details Responsive
+================================= */
+
+@media (max-width: 991.98px) {
+    .course-details-section {
+        padding: 40px 0 70px;
+    }
+
+    .course-registration-card {
+        position: static;
+    }
+
+    .details-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .course-details-header h1 {
+        font-size: 2rem;
+        letter-spacing: -0.8px;
+    }
+
+    .details-meta {
+        gap: 12px;
+    }
+
+    .details-meta > span {
+        font-size: 0.76rem;
+    }
+
+    .details-image {
+        height: 250px;
+    }
+
+    .details-content-section {
+        padding: 25px 0;
+    }
+
+    .course-registration-card {
+        padding: 23px;
+    }
+}
