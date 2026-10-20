@@ -262,3 +262,55 @@ if (courseTitle) {
     registerButton.href =
         `contact.html?course=${encodeURIComponent(requestedCourse && courses[requestedCourse] ? requestedCourse : "web-development")}`;
 }
+
+
+/* Course Registration */
+const registrationForm = document.getElementById("registrationForm");
+
+if (registrationForm) {
+const courseSelect = document.getElementById("course");
+const successMessage = document.getElementById("formSuccess");
+
+
+// Preselect the course when arriving from the course details page.
+const requestedCourse = new URLSearchParams(window.location.search).get("course");
+
+if (requestedCourse && courseSelect) {
+    const matchingOption = Array.from(courseSelect.options).find(
+        (option) => option.value === requestedCourse
+    );
+
+    if (matchingOption) {
+        courseSelect.value = requestedCourse;
+    }
+}
+
+registrationForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    successMessage.classList.add("d-none");
+
+    if (!registrationForm.checkValidity()) {
+        registrationForm.classList.add("was-validated");
+
+        const firstInvalidField = registrationForm.querySelector(":invalid");
+
+        if (firstInvalidField) {
+            firstInvalidField.focus();
+        }
+
+        return;
+    }
+
+    registrationForm.classList.remove("was-validated");
+    successMessage.classList.remove("d-none");
+
+    registrationForm.reset();
+
+    // Keep the success message visible without implying data was transmitted.
+    successMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+});
+}
