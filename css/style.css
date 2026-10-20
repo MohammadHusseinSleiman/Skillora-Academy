@@ -1742,280 +1742,287 @@ a {
 
 
 
-/* Registration Page */
+/* ==============================
+    20. Registration Page
+================================= */
+
 .registration-hero {
-padding: 80px 0 65px;
-text-align: center;
-background: var(--background);
-border-bottom: 1px solid var(--border);
+    padding: 80px 0 65px;
+    text-align: center;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
 }
 
 .registration-hero .section-eyebrow {
-display: inline-flex;
-align-items: center;
-gap: 8px;
-margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
 }
 
 .registration-hero h1 {
-margin-bottom: 18px;
-font-size: clamp(2.2rem, 5vw, 3.6rem);
-font-weight: 800;
-letter-spacing: -2px;
-color: var(--dark);
+    margin-bottom: 18px;
+    color: var(--dark);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -2px;
 }
 
 .registration-highlight {
-color: var(--primary);
+    color: var(--primary);
 }
 
 .registration-hero > .container > p {
-max-width: 620px;
-margin: 0 auto;
-color: var(--muted);
-line-height: 1.8;
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.8;
 }
 
 .registration-section {
-background: var(--background);
+    background: var(--background);
 }
 
 .registration-form-card,
 .registration-info-card {
-padding: 35px;
-border: 1px solid var(--border);
-border-radius: var(--radius-lg);
-background: var(--surface);
-box-shadow: var(--shadow-sm);
+    padding: 35px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
 }
 
 .registration-form-heading {
-display: flex;
-align-items: center;
-gap: 16px;
-margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .registration-icon {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-width: 54px;
-height: 54px;
-border-radius: var(--radius-md);
-background: var(--primary-light);
-color: var(--primary);
-font-size: 1.4rem;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: var(--radius-md);
+    font-size: 1.4rem;
 }
 
 .registration-form-heading h2 {
-margin: 0 0 6px;
-color: var(--dark);
-font-size: 1.45rem;
-font-weight: 700;
+    margin: 0 0 6px;
+    color: var(--dark);
+    font-size: 1.45rem;
+    font-weight: 700;
 }
 
 .registration-form-heading p {
-margin: 0;
-color: var(--muted);
-font-size: 0.92rem;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
 }
 
 .registration-form-card .form-label {
-margin-bottom: 9px;
-color: var(--dark);
-font-weight: 600;
-font-size: 0.92rem;
+    margin-bottom: 9px;
+    color: var(--dark);
+    font-size: 0.92rem;
+    font-weight: 600;
 }
 
 .registration-form-card .form-label > span:first-child {
-color: var(--primary);
+    color: var(--primary);
 }
 
 .registration-form-card .optional-label {
-color: var(--muted);
-font-weight: 400;
+    color: var(--muted);
+    font-weight: 400;
 }
 
 .registration-form-card .form-control,
 .registration-form-card .form-select {
-min-height: 50px;
-padding: 12px 14px;
-border: 1px solid var(--border);
-border-radius: var(--radius-md);
-background-color: var(--surface);
-color: var(--dark);
-font: inherit;
-transition: border-color var(--transition), box-shadow var(--transition);
+    min-height: 50px;
+    padding: 12px 14px;
+    color: var(--dark);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font: inherit;
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
 }
 
 .registration-form-card textarea.form-control {
-min-height: 135px;
-resize: vertical;
+    min-height: 135px;
+    resize: vertical;
 }
 
 .registration-form-card .form-control::placeholder {
-color: var(--muted);
-opacity: 0.8;
+    color: var(--muted);
+    opacity: 0.8;
 }
 
 .registration-form-card .form-control:focus,
 .registration-form-card .form-select:focus {
-border-color: var(--primary);
-box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(108, 76, 241, 0.15);
 }
 
 .form-required-note {
-margin-bottom: 18px;
-color: var(--muted);
-font-size: 0.85rem;
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 0.85rem;
 }
 
 .registration-submit {
-width: 100%;
-min-height: 52px;
-display: inline-flex;
-justify-content: center;
-align-items: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 52px;
 }
 
 .registration-info-card {
-position: sticky;
-top: 100px;
-overflow: hidden;
+    position: sticky;
+    top: 100px;
+    overflow: hidden;
 }
 
 .registration-info-visual {
-display: flex;
-align-items: center;
-justify-content: center;
-height: 155px;
-margin-bottom: 30px;
-border-radius: var(--radius-md);
-background: var(--primary-light);
-color: var(--primary);
-font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 155px;
+    margin-bottom: 30px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: var(--radius-md);
+    font-size: 4.5rem;
 }
 
 .registration-info-card > h2 {
-margin: 14px 0;
-color: var(--dark);
-font-size: 1.8rem;
-font-weight: 800;
-letter-spacing: -0.8px;
+    margin: 14px 0;
+    color: var(--dark);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
 }
 
 .registration-info-card > p {
-margin-bottom: 28px;
-color: var(--muted);
-line-height: 1.8;
+    margin-bottom: 28px;
+    color: var(--muted);
+    line-height: 1.8;
 }
 
 .registration-benefit {
-display: flex;
-align-items: flex-start;
-gap: 14px;
-margin-bottom: 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 22px;
 }
 
 .registration-benefit > span {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-width: 30px;
-height: 30px;
-border-radius: 50%;
-background: var(--primary-light);
-color: var(--primary);
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: var(--primary);
+    background: var(--primary-light);
+    border-radius: 50%;
 }
 
 .registration-benefit h3 {
-margin: 2px 0 5px;
-color: var(--dark);
-font-size: 0.98rem;
-font-weight: 700;
+    margin: 2px 0 5px;
+    color: var(--dark);
+    font-size: 0.98rem;
+    font-weight: 700;
 }
 
 .registration-benefit p {
-margin: 0;
-color: var(--muted);
-font-size: 0.9rem;
-line-height: 1.6;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .registration-help {
-display: flex;
-gap: 14px;
-margin-top: 30px;
-padding: 20px;
-border: 1px solid var(--border);
-border-radius: var(--radius-md);
-background: var(--background);
+    display: flex;
+    gap: 14px;
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
 }
 
 .registration-help > i {
-color: var(--primary);
-font-size: 1.35rem;
+    color: var(--primary);
+    font-size: 1.35rem;
 }
 
 .registration-help h3 {
-margin-bottom: 7px;
-color: var(--dark);
-font-size: 0.98rem;
-font-weight: 700;
+    margin-bottom: 7px;
+    color: var(--dark);
+    font-size: 0.98rem;
+    font-weight: 700;
 }
 
 .registration-help p {
-margin-bottom: 12px;
-color: var(--muted);
-font-size: 0.88rem;
-line-height: 1.6;
+    margin-bottom: 12px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
 }
 
 .registration-help a {
-color: var(--primary);
-font-size: 0.9rem;
-font-weight: 700;
-text-decoration: none;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .registration-help a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 #formSuccess {
-margin-bottom: 25px;
-line-height: 1.7;
+    margin-bottom: 25px;
+    line-height: 1.7;
 }
 
+
+/* Registration Page Responsive */
+
 @media (max-width: 991.98px) {
-.registration-info-card {
-position: static;
-}
+    .registration-info-card {
+        position: static;
+    }
 }
 
 @media (max-width: 575.98px) {
-.registration-hero {
-padding: 60px 0 45px;
-}
+    .registration-hero {
+        padding: 60px 0 45px;
+    }
 
-.registration-hero h1 {
-    letter-spacing: -1px;
-}
+    .registration-hero h1 {
+        letter-spacing: -1px;
+    }
 
-.registration-form-card,
-.registration-info-card {
-    padding: 22px;
-}
+    .registration-form-card,
+    .registration-info-card {
+        padding: 22px;
+    }
 
-.registration-form-heading {
-    align-items: flex-start;
-}
+    .registration-form-heading {
+        align-items: flex-start;
+    }
 
-.registration-info-visual {
-    height: 125px;
-    font-size: 3.5rem;
-}
+    .registration-info-visual {
+        height: 125px;
+        font-size: 3.5rem;
+    }
 }
