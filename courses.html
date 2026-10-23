@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Explore Skillora Academy courses in web development, programming, UI/UX design, and database fundamentals.">
+    <meta name="description"
+        content="Explore Skillora Academy courses in web development, programming, UI/UX design, and database fundamentals.">
 
     <title>Explore Courses | Skillora Academy</title>
 
@@ -36,14 +38,8 @@
                 Skillora<span class="brand-dot">.</span>
             </a>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
 
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,10 +54,6 @@
 
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="course-details.html?course=web-development">Course Details</a>
                     </li>
 
                     <li class="nav-item">
@@ -101,43 +93,6 @@
     </section>
 
 
-    <!-- Page Hero -->
-    <header class="courses-hero">
-        <div class="container">
-
-            <div class="courses-hero-content">
-
-                <div class="hero-badge">
-                    <i class="bi bi-book-half me-2"></i>
-                    Discover Your Potential
-                </div>
-
-                <h1>
-                    Find the Right Course<br>
-                    <span>For Your Future.</span>
-                </h1>
-
-                <p>
-                    Explore practical learning opportunities, develop new skills,
-                    and discover a learning path that matches your goals.
-                </p>
-
-                <div class="courses-hero-actions">
-                    <a href="#courseCatalog" class="btn btn-primary-custom btn-lg">
-                        Explore All Courses
-                        <i class="bi bi-arrow-down ms-2"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="courses-hero-decoration courses-decoration-one"></div>
-            <div class="courses-hero-decoration courses-decoration-two"></div>
-
-        </div>
-    </header>
-
-
     <!-- Course Catalog -->
     <main class="courses-catalog section-padding" id="courseCatalog">
 
@@ -147,7 +102,7 @@
 
                 <div>
                     <span class="section-eyebrow">OUR LEARNING PROGRAMS</span>
-                    <h2>Find Your Next Learning Opportunity</h2>
+                    <h1>Find Your Next Learning Opportunity</h1>
                     <p>
                         From your first steps in programming to creative design
                         and database skills, find a course to get started.
@@ -156,7 +111,7 @@
 
                 <div class="courses-count">
                     <i class="bi bi-collection me-2"></i>
-                    <span id="courseCount">6 Courses</span>
+                    <span id="courseCount" aria-live="polite">6 Courses</span>
                 </div>
 
             </div>
@@ -165,43 +120,23 @@
             <!-- Course Filters -->
             <div class="course-filters" role="group" aria-label="Filter courses by category">
 
-                <button
-                    type="button"
-                    class="course-filter active"
-                    data-filter="all"
-                    aria-pressed="true">
+                <button type="button" class="course-filter active" data-filter="all" aria-pressed="true">
                     All Courses
                 </button>
 
-                <button
-                    type="button"
-                    class="course-filter"
-                    data-filter="development"
-                    aria-pressed="false">
+                <button type="button" class="course-filter" data-filter="development" aria-pressed="false">
                     Web Development
                 </button>
 
-                <button
-                    type="button"
-                    class="course-filter"
-                    data-filter="programming"
-                    aria-pressed="false">
+                <button type="button" class="course-filter" data-filter="programming" aria-pressed="false">
                     Programming
                 </button>
 
-                <button
-                    type="button"
-                    class="course-filter"
-                    data-filter="design"
-                    aria-pressed="false">
+                <button type="button" class="course-filter" data-filter="design" aria-pressed="false">
                     UI/UX Design
                 </button>
 
-                <button
-                    type="button"
-                    class="course-filter"
-                    data-filter="database"
-                    aria-pressed="false">
+                <button type="button" class="course-filter" data-filter="database" aria-pressed="false">
                     Databases
                 </button>
 
@@ -219,11 +154,8 @@
 
                         <div class="course-image-wrapper">
 
-                            <img
-                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
-                                alt="Web development workspace"
-                                class="course-image"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                                alt="Web development workspace" class="course-image" loading="lazy">
 
                             <span class="course-category">Development</span>
 
@@ -246,9 +178,7 @@
                             <div class="course-card-footer">
                                 <span class="course-price">Begin Your Journey</span>
 
-                                <a
-                                    href="course-details.html?course=web-development"
-                                    class="course-arrow"
+                                <a href="course-details.html?course=web-development" class="course-arrow"
                                     aria-label="View Web Development details">
 
                                     <i class="bi bi-arrow-up-right"></i>
@@ -269,11 +199,8 @@
 
                         <div class="course-image-wrapper">
 
-                            <img
-                                src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80"
-                                alt="Web interface displayed on a computer"
-                                class="course-image"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80"
+                                alt="Web interface displayed on a computer" class="course-image" loading="lazy">
 
                             <span class="course-category">Development</span>
 
@@ -296,9 +223,7 @@
                             <div class="course-card-footer">
                                 <span class="course-price">Build Your Skills</span>
 
-                                <a
-                                    href="course-details.html?course=frontend"
-                                    class="course-arrow"
+                                <a href="course-details.html?course=frontend" class="course-arrow"
                                     aria-label="View Front-End Development details">
 
                                     <i class="bi bi-arrow-up-right"></i>
@@ -319,10 +244,8 @@
 
                         <div class="course-image-wrapper">
 
-                            <img
-                                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
-                                alt="Server infrastructure representing backend development"
-                                class="course-image"
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                                alt="Server infrastructure representing backend development" class="course-image"
                                 loading="lazy">
 
                             <span class="course-category">Development</span>
@@ -346,9 +269,7 @@
                             <div class="course-card-footer">
                                 <span class="course-price">Explore Back-End</span>
 
-                                <a
-                                    href="course-details.html?course=backend-php"
-                                    class="course-arrow"
+                                <a href="course-details.html?course=backend-php" class="course-arrow"
                                     aria-label="View Back-End Development details">
 
                                     <i class="bi bi-arrow-up-right"></i>
@@ -369,11 +290,8 @@
 
                         <div class="course-image-wrapper">
 
-                            <img
-                                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
-                                alt="Creative UI and UX design workspace"
-                                class="course-image"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
+                                alt="Creative UI and UX design workspace" class="course-image" loading="lazy">
 
                             <span class="course-category">Design</span>
 
@@ -396,9 +314,7 @@
                             <div class="course-card-footer">
                                 <span class="course-price">Explore Design</span>
 
-                                <a
-                                    href="course-details.html?course=ui-ux-design"
-                                    class="course-arrow"
+                                <a href="course-details.html?course=ui-ux-design" class="course-arrow"
                                     aria-label="View UI/UX Design details">
 
                                     <i class="bi bi-arrow-up-right"></i>
@@ -419,11 +335,8 @@
 
                         <div class="course-image-wrapper">
 
-                            <img
-                                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
-                                alt="Programming code on a computer screen"
-                                class="course-image"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                                alt="Programming code on a computer screen" class="course-image" loading="lazy">
 
                             <span class="course-category">Programming</span>
 
@@ -446,9 +359,7 @@
                             <div class="course-card-footer">
                                 <span class="course-price">Start Coding</span>
 
-                                <a
-                                    href="course-details.html?course=python"
-                                    class="course-arrow"
+                                <a href="course-details.html?course=python" class="course-arrow"
                                     aria-label="View Python Programming details">
 
                                     <i class="bi bi-arrow-up-right"></i>
@@ -469,11 +380,8 @@
 
                         <div class="course-image-wrapper">
 
-                            <img
-                                src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80"
-                                alt="Database and data management concept"
-                                class="course-image"
-                                loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80"
+                                alt="Database and data management concept" class="course-image" loading="lazy">
 
                             <span class="course-category">Databases</span>
 
@@ -496,9 +404,7 @@
                             <div class="course-card-footer">
                                 <span class="course-price">Explore Databases</span>
 
-                                <a
-                                    href="course-details.html?course=database"
-                                    class="course-arrow"
+                                <a href="course-details.html?course=database" class="course-arrow"
                                     aria-label="View Database Fundamentals details">
 
                                     <i class="bi bi-arrow-up-right"></i>
@@ -588,7 +494,6 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="courses.html">All Courses</a></li>
-                        <li><a href="course-details.html?course=web-development">Course Details</a></li>
                     </ul>
 
                 </div>
@@ -642,4 +547,5 @@
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
